@@ -1,0 +1,412 @@
+/* ----------------------------------------------
+:: Template Name: Caviar - Premium Restaurant Template
+:: Template Author: Colorlib
+:: Template Author URI: https://colorlib.com
+:: Version: v1.0
+:: Last Updated: 12-13-2017
+---------------------------------------------- */
+
+/* Base CSS */
+
+#loader-wrapper {
+    display: none;
+    align-items: center;
+}
+#loader-modal {
+    display: none;
+    align-items: center;
+}
+#loader-download {
+    display: none;
+    align-items: center;
+}
+#loader-upload {
+    display: none;
+    align-items: center;
+}
+#progress-container {
+    height: 18px;
+    width: 75vw;
+    margin: 10px 0;
+    border: 1px solid #5cb85cb4;
+    border-radius: 5px;
+}
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    color: white;
+    background: #5cb85cb4;
+    font-size: smaller;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 700ms;
+    transition-delay: 300ms;
+}
+
+.loader {
+	float:left;
+	border: 5px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 5px solid #3498db;
+	width: 25px;
+	height: 25px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+    margin-right: 10px;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+#preloader {
+    overflow: hidden;
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+#preloader .preload-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 8;
+    background-color: transparent;
+    margin-top: -25px;
+    margin-left: -25px;
+    text-align: center;
+    line-height: 50px;
+}
+.preload-icons > img {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 50%;
+    margin-left: -16px;
+}
+.caviar-load {
+    -webkit-animation: 6000ms linear 0s normal none infinite running caviar-load;
+    animation: 6000ms linear 0s normal none infinite running caviar-load;
+    background: transparent none repeat scroll 0 0;
+    border-color: #3498db white white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10px;
+    height: 70px;
+    position: relative;
+    width: 70px;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+@-webkit-keyframes caviar-load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes caviar-load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#preloader .preload-icons .preload-1 {
+    -webkit-animation: 6000ms linear 0s normal none infinite running load-1;
+    animation: 6000ms linear 0s normal none infinite running load-1;
+}
+@-webkit-keyframes load-1 {
+    0% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    30% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    33.333% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+@keyframes load-1 {
+    0% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    30% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    33.333% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+#preloader .preload-icons .preload-2 {
+    -webkit-animation: 6000ms linear 0s normal none infinite running load-2;
+    animation: 6000ms linear 0s normal none infinite running load-2;
+}
+@-webkit-keyframes load-2 {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    27% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+    33.333% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    60% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    66.666% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+@keyframes load-2 {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    27% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+    33.333% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    60% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    66.666% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+#preloader .preload-icons .preload-3 {
+    -webkit-animation: 6000ms linear 0s normal none infinite running load-3;
+    animation: 6000ms linear 0s normal none infinite running load-3;
+}
+@-webkit-keyframes load-3 {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    60% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+    66.666% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    94% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+@keyframes load-3 {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    60% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+    66.666% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    94% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+
+.download-animation-wrapper {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+  }
+  .hidden {
+    display: none;
+  }
+  .page {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 2%;
+    display: flex;
+    align-items: center;
+    -moz-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+  }
+
+  .folder {
+    background-color: #337ab7;
+    position: relative;
+    width: 92px;
+    height: 64px;
+    display: block;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+    .folder-tab {
+      position: absolute;
+      height: 10px;
+      left: 0;
+      bottom: 100%;
+      display: block;
+      width: 40%;
+      border-top-left-radius: 8px;
+      background-color: inherit;
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: calc(100% - 10px);
+        border-bottom: 10px solid #337ab7;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+    }
+    .folder-icn {
+      padding-top: 12px;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .downloading {
+      width: 30px;
+      height: 32px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+      .custom-arrow {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -7px;
+        background-color: #fff;
+        
+        -webkit-animation-name: downloading;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: downloading;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        
+        &:after {
+          content: ''; position: absolute; display: block;
+          top: 100%;
+          left: -9px;
+          border-top: 15px solid #fff;
+          border-left: 16px solid transparent;
+          border-right: 16px solid transparent;
+        }
+      }
+    .bar {
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+      margin: 0 auto;
+    }
+
+  @-webkit-keyframes downloading {
+    0% {
+      top: 0;
+      opacity: 1;
+    }
+    50% {
+      top: 110%;
+      opacity: 0;
+    }
+    52% {
+      top: -110%;
+      opacity: 0;
+    } 
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes downloading {
+    0% {
+      top: 0;
+      opacity: 1;
+    }
+    50% {
+      top: 110%;
+      opacity: 0;
+    }
+    52% {
+      top: -110%;
+      opacity: 0;
+    } 
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
